@@ -1,0 +1,43 @@
+
+## Site Escola
+
+//Caracteristicas( site escolar com três paginas)
+
+# Page Home
+[x] - Cabecalho com Logo e Links.
+[x] - Imagen de fundo com Slogam e sub-slogam por cima.
+[x] - Area de Mestres.
+[x] - Calendario com dias de aulas para cada ano.
+[x] - Jornal escolar
+[x] - Rodapé com logo, links, copy.
+
+# Page Eventos
+[] - Cabecalho com Logo e Links.
+[] - Seção de eventos em imagens.
+[] - Seção de eventos em videos do youtube.
+[] - Seção de proximos eventos.
+[] - Rodapé com logo, links, copy.
+
+# Page About 
+[] - Cabecalho com Logo e links.
+[] - Seção de acredecimento com imagens.
+[] - Seção de texto falando sobre o proposito do site e a missão da escola.
+[] - Rodapé com logo, links, copy.
+
+## Funcionalidades
+
+[] - Responsivel.
+[] - Possivel ADM realizar login.
+[] - Tratar erros internos e retornar msg ao usuario final.
+[] - Postar conteudos na api.
+[] - Atualizar conteudos na api.
+[] - Excluir conteudos da api.
+
+
+# Page ADM
+[] - Sessão de postagem, atualização, exclusão sobre os mestres.
+[] - Sessão de postagem, atualização, exclusão sobre o calendario das turmas.
+[] - Sessão de postagem, atualização, exclusão sobre o jornal escolar.
+[] - Sessão de postagem, atualização, exclusão sobre o slogam, o sub-slogam e a img de fundo.
+[] - Sessão de comunição com o dev.
+

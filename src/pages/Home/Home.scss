@@ -1,0 +1,242 @@
+@import '../../_colors/colors.scss';
+
+.home {
+  margin-top: 30px;
+  width: 100%;
+  height: 700px;
+  background: url('../../assets/escola.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      background-color: transparent;
+      color: white;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    span {
+      color: $cor-span;
+      background-color: transparent;
+      font-weight: normal;
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.information {
+  display: grid;
+  max-width: 100%;
+
+
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+
+  .professions {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+
+
+    .mestres {
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 250px;
+      margin-left: 10px;
+
+      img {
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .mestre-infomation {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        h3 {
+          text-align: center;
+          padding: 8px 5px;
+          background-color: $cor-blueviolet;
+          color: white;
+        }
+
+        p {
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+  background-image: url('https://images.pexels.com/photos/7944238/pexels-photo-7944238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+
+  .status-shadow {
+    background: rgba(77, 102, 244, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  h2 {
+    z-index: 1;
+    color: white;
+    font-size: 4rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 2px 15px;
+    background: transparent;
+  }
+
+  .content-status {
+    z-index: 1;
+    background: transparent;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    flex: 1;
+
+    .swipers {
+      // flex: 1;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    p {
+
+      background: transparent;
+      color: white;
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width:1024px) {
+  .information {
+
+    .professions {
+      display: flex;
+      flex-wrap: wrap;
+
+      .mestres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 90%;
+        }
+
+        .mestre-infomation {
+          width: 90%;
+          height: fit-content;
+
+          p {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    font-size: 2rem;
+  }
+
+  .content-status {
+    flex-wrap: wrap;
+    width: 100%;
+
+    .swipers {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width:768px) {
+
+  .home .content {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .information {
+
+    .professions {
+      display: flex;
+      flex-wrap: wrap;
+
+      .mestres {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 90%;
+        }
+
+        .mestre-infomation {
+          width: 90%;
+          height: fit-content;
+
+          p {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    font-size: 2rem;
+  }
+
+}

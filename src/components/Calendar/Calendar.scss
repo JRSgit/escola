@@ -1,0 +1,35 @@
+@import '../../_colors/colors';
+
+.calendar {
+  width: 100%;
+  min-height: 200px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  >span {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar {
+
+    span {
+      text-align: center;
+    }
+  }
+}

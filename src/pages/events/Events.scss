@@ -1,0 +1,231 @@
+@import '../../_colors/colors.scss';
+
+.events {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  h1 {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 12px;
+    color: $cor-span;
+
+    margin-bottom: 50px;
+  }
+
+}
+
+.events-header {
+  display: flex;
+  width: 100%;
+  min-height: 450px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/events.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 2rem;
+  position: relative;
+
+  h1 {
+    display: block;
+    background-color: transparent;
+    color: white;
+    font-size: 4rem;
+    width: 70%;
+    text-align: center;
+
+  }
+
+  span {
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: white;
+    background-color: $cor-span;
+    padding: 0 8px;
+    border-radius: 20px;
+
+  }
+
+
+
+}
+
+.events-grid {
+  padding: 0px 20px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  // overflow: scroll;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+
+
+  img {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+
+
+  }
+}
+
+.next-events-photo {
+  width: 100%;
+  min-height: 650px;
+  height: 100%;
+  margin-top: 50px;
+  background-image: url('https://images.pexels.com/photos/1157557/pexels-photo-1157557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  span {
+    display: block;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    font-size: 4rem;
+    background: transparent;
+    font-weight: bold;
+    color: $cor-span;
+    background-attachment: fixed !important;
+  }
+}
+
+.events-next {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  // img {
+  //   width: 300px;
+  //   height: 300px;
+  // }
+
+  .next-event-1,
+  .next-event-2,
+  .next-event-3,
+  .next-event-4 {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 450px;
+    gap: 30px;
+
+    img {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+
+
+    }
+
+  }
+
+  .next-event-1,
+  .next-event-3 {
+    background-color: $cor-span;
+    padding: 25px 25px;
+    border-radius: 8px;
+  }
+
+  .next-event-2,
+  .next-event-4 {
+    padding: 25px 25px;
+    border-radius: 8px;
+    background-color: #f1f1f0;
+  }
+
+  .next-event-1>:nth-child(2),
+  .next-event-3>:nth-child(2) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+
+    h3 {
+      font-size: 2.5rem;
+      color: white;
+      background: transparent;
+    }
+
+    .date {
+      background: transparent;
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: space-around;
+
+      span {
+
+        background: transparent;
+      }
+    }
+
+    p {
+      text-align: center;
+      background: transparent;
+      padding: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .next-event-2>:nth-child(1),
+  .next-event-4>:nth-child(1) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+
+    h3 {
+      font-size: 2.5rem;
+      color: $cor-span;
+      background: transparent;
+    }
+
+    .date {
+      background: transparent;
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: space-around;
+
+      span {
+
+        background: transparent;
+      }
+    }
+
+    p {
+      text-align: center;
+      background: transparent;
+      padding: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+}
